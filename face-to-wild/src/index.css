@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #070e0a;
+    color: #f3f4f6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(circle at center, transparent 40%, rgba(5, 12, 9, 0.75) 100%);
+}
+
+.bg-jungle-glow {
+  background: radial-gradient(circle at 50% -10%, rgba(16, 185, 129, 0.15), transparent 60%),
+              radial-gradient(circle at 100% 80%, rgba(6, 182, 212, 0.1), transparent 50%),
+              radial-gradient(circle at 0% 90%, rgba(168, 85, 247, 0.08), transparent 50%),
+              #070e0a;
+}
